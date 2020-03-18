@@ -1,0 +1,32 @@
+<mat-drawer-container class="example-container" autosize>
+    <div class='example-sidenav-content'>
+        <button type="button" class='nav-btn' mat-button (click)="drawer.toggle()">
+          <fa-icon class='nav-btn__icon' [icon]='faAlignRight'></fa-icon>
+        </button>
+        <div class='title'>
+            <h1 class='title__name'>Ulyana Bychkovskaya</h1>
+            <h2 title='title__job'>Front-End Developer</h2>
+        </div>
+        <div class='social-sites'>
+            <div class='social-sites__icon-wrapper'>
+                <fa-icon class='social-sites__icon' [icon]='faGithubAlt'></fa-icon>
+            </div>
+            <div class='social-sites__icon-wrapper'>
+                <fa-icon class='social-sites__icon' [icon]='faLinkedinIn'></fa-icon>
+            </div>
+            <div class='social-sites__icon-wrapper'>
+                <fa-icon class='social-sites__icon' [icon]='faTelegramPlane'></fa-icon>
+            </div>
+            <div class='social-sites__icon-wrapper'>
+                <fa-icon class='social-sites__icon' [icon]='faEnvelope'></fa-icon>
+            </div>
+            <div class='social-sites__resume-wrapper'>
+                <span class='social-sites__resume'>Download Resume</span>
+            </div>
+        </div>
+    </div>
+  
+    <mat-drawer #drawer class="example-sidenav" mode="over" position="end">
+      <p>Auto-resizing sidenav</p>
+    </mat-drawer>
+</mat-drawer-container>

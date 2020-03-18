@@ -1,0 +1,24 @@
+:host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    width: 50%;
+}
+.my-info {
+    margin: 0 30px;
+}
+.my-info__title {
+    color: rgb(173, 138, 110);
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+.my-info__data {
+    color: rgb(56, 49, 43);
+    font-size: 1.7em;
+}
+.character {
+    color: rgb(145, 110, 71);
+    text-transform: uppercase;
+}
