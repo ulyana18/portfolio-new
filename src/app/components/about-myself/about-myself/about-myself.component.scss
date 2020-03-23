@@ -1,24 +1,41 @@
-:host {
+.card-info {
+    padding: 80px 0;
+    // background-image: url('../../../../assets/images/tree-2.jpeg');
+}
+.wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
+    margin-left: 20px;
+    background-color: rgba(134, 99, 84, 0.705);
 }
 img {
-    width: 50%;
+    width: 450px;
 }
 .my-info {
-    margin: 0 30px;
+    width: 38%;
+    margin: 0 auto;
+}
+.my-info__item {
+    margin: 30px auto;
 }
 .my-info__title {
-    color: rgb(173, 138, 110);
+    margin-right: 25px;
+    color: rgb(146, 122, 102);
     font-size: 1.6em;
     text-transform: uppercase;
 }
 .my-info__data {
-    color: rgb(56, 49, 43);
+    color: rgb(197, 169, 143);
     font-size: 1.7em;
 }
+.my-info__character-text {
+    margin-top: 60px;
+    font-size: 1.3em;
+    color: rgb(160, 132, 109);
+}
 .character {
-    color: rgb(145, 110, 71);
+    color: rgb(185, 165, 144);
     text-transform: uppercase;
 }

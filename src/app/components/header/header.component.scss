@@ -1,10 +1,12 @@
-$icon-color: #000;
+$icon-color: rgb(131, 110, 86);
+$name-color: rgb(189, 162, 136);
 
 .example-container {
     display: block;
     width: 100%;
     height: 100vh;
-    background-image: url('../../../assets/images/main.jpg');
+    background-image: url('../../../assets/images/propose-3.jpg');
+    background-position: 50% 55%;
     background-size: cover;
 }
 .example-sidenav-content {
@@ -22,21 +24,54 @@ $icon-color: #000;
     right: 30px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    font-size: 38px;
+    font-size: 33px;
+    color: $icon-color;
 
     &:active {
         outline: none;
     }
 }
+// @keyframes name {
+//     0% {
+//         color: $name-color;
+//     }
+//     50% {
+//        color: rgb(94, 80, 66); 
+//     }
+//     100% {
+//         color: $name-color;
+//     }
+// }
 .title {
-    margin-left: 30px;
+    margin: 0 auto;
 }
 .title__name {
     font-size: 4em;
+    letter-spacing: 0.4em;
     text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1em;
+    background: linear-gradient(90deg, rgba(131, 113, 97, 0.74), rgb(121, 101, 81), $name-color );
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.164);
+    // animation: name 5s infinite ease-in-out;
+}
+@keyframes animate {
+    0% {
+        background-position: -600%;
+    }
+    100% {
+        background-position: 600%;
+    }
 }
 .title__job {
-    font-size: 3em;
+    font-size: 2em;
+    line-height: 3em;
+    letter-spacing: 0.15em;
+    color: rgba(97, 86, 77, 0.788);
 }
 .social-sites {
     display: flex;
@@ -47,7 +82,7 @@ $icon-color: #000;
     position: absolute;
     bottom: 20px;
     right: 30px;
-    width: 380px;
+    width: 400px;
 }
 .social-sites__icon-wrapper {
     display: flex;
@@ -55,10 +90,16 @@ $icon-color: #000;
     align-items: center;
     width: 40px;
     height: 40px;
-    border: 2px solid $icon-color;
+    border: 1px solid $icon-color;
     border-radius: 50%;
-
+    background-color: rgba(0, 0, 0, 0);
+    color: $icon-color;
+    transition: all 0.5s;
     cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.342);
+    }
 }
 .social-sites__icon {
     font-size: 24px;
@@ -68,12 +109,19 @@ $icon-color: #000;
     justify-content: center;
     align-items: center;
     height: 40px;
-    border: 2px solid $icon-color;
+    border: 1px solid $icon-color;
     border-radius: 18px;
-
+    background-color: rgba(0, 0, 0, 0);
+    color: $icon-color;
+    transition: all 0.5s;
     cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.288);
+    }
+
 }
 .social-sites__resume {
     font-size: 15px;
-    margin: 0 5px;
+    margin: 0 20px;
 }
