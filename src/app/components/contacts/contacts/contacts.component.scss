@@ -1,0 +1,60 @@
+$title-color: rgb(202, 196, 180);
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 40px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $title-color;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1.4em;
+  letter-spacing: 0.3em;
+  white-space: nowrap;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 2px;
+    margin: 0 15px;
+    background-color: $title-color;
+  }
+}
+.send-message-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  margin: 70px 0;
+}
+.social-sites__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border: 2px solid $title-color;
+  border-radius: 50%;
+
+  color: $title-color;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.342);
+    border-color: rgb(134, 127, 119);
+    color: rgb(134, 127, 119);
+  }
+
+}
+.social-sites__icon {
+  font-size: 2.7em;
+}

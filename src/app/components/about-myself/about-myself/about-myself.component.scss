@@ -1,21 +1,69 @@
+$title-color: rgb(202, 196, 180);
+
 .card-info {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
     padding: 80px 0;
-    // background-image: url('../../../../assets/images/tree-2.jpeg');
+    position: relative;
 }
 .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 75vw;
     margin-left: 20px;
-    background-color: rgba(134, 99, 84, 0.705);
+    background-color: rgba(121, 92, 80, 0.705);
+
+    @media(max-width: 1163px) {
+        flex-direction: column-reverse;
+        padding: 30px 0;
+    }
+}
+.title {
+    position: absolute;
+    right: -13vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $title-color;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.4em;
+    letter-spacing: 0.3em;
+    white-space: nowrap;
+    transform: rotate(90deg);
+  
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      width: 80px;
+      height: 2px;
+      margin: 0 15px;
+      background-color: $title-color;
+    }
+
+    @media(max-width: 1068px) {
+        right: -200px;
+    }
 }
 img {
-    width: 450px;
+    width: 430px;
+
+    @media(max-width: 1163px) {
+        max-width: 430px;
+        width: 80%;
+    }
 }
 .my-info {
-    width: 38%;
+    width: 43%;
     margin: 0 auto;
+
+    @media(max-width: 1163px) {
+        width: 90%;
+    }
 }
 .my-info__item {
     margin: 30px auto;
@@ -25,15 +73,37 @@ img {
     color: rgb(146, 122, 102);
     font-size: 1.6em;
     text-transform: uppercase;
+
+    @media(max-width: 1163px) {
+        font-size: 1.5em;
+    }
+    @media(max-width: 703px) {
+        font-size: 1.3em;
+    }
 }
 .my-info__data {
-    color: rgb(197, 169, 143);
+    color: rgb(170, 152, 135);
     font-size: 1.7em;
+
+    @media(max-width: 1163px) {
+        font-size: 1.7em;
+    }
+    @media(max-width: 703px) {
+        font-size: 1.3em;
+    }
 }
 .my-info__character-text {
     margin-top: 60px;
     font-size: 1.3em;
+    line-height: 1.5em;
     color: rgb(160, 132, 109);
+
+    @media(max-width: 1163px) {
+        font-size: 1.3em;
+    }
+    @media(max-width: 703px) {
+        font-size: 1.1em;
+    }
 }
 .character {
     color: rgb(185, 165, 144);

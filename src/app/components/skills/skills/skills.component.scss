@@ -1,0 +1,54 @@
+$title-color: rgb(202, 196, 180);
+
+:host {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding-top: 160px;
+    padding-bottom: 50px;
+}
+.title {
+    position: absolute;
+    left: -11vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $title-color;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.4em;
+    letter-spacing: 0.3em;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+  
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      width: 80px;
+      height: 2px;
+      margin: 0 15px;
+      background-color: $title-color;
+    }
+    @media(max-width: 1068px) {
+        left: -160px;
+    }
+}
+.skills-wrapper {
+    width: 60%;
+    color: #fff;
+    background-color: rgba(29, 26, 25, 0.671);
+}
+.skill {
+    margin: 30px;
+}
+h3 {
+    text-align: center;
+    font-size: 1.4em;
+    color: rgb(218, 179, 164);
+}
+mat-progress-bar {
+    color: rgb(53, 49, 42);
+}

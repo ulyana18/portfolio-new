@@ -8,25 +8,31 @@
             <h2 class='title__job'>Front-End Developer</h2>
         </div>
         <div class='social-sites'>
-            <div class='social-sites__icon-wrapper'>
+            <a class='social-sites__icon-wrapper' href='https://github.com/ulyana18'>
                 <fa-icon class='social-sites__icon' [icon]='faGithubAlt'></fa-icon>
-            </div>
-            <div class='social-sites__icon-wrapper'>
+            </a>
+            <a class='social-sites__icon-wrapper' href='https://www.linkedin.com/in/ulyana-bychkovskaya-593807197/'>
                 <fa-icon class='social-sites__icon' [icon]='faLinkedinIn'></fa-icon>
-            </div>
-            <div class='social-sites__icon-wrapper'>
+            </a>
+            <a class='social-sites__icon-wrapper' href='https://t.me/ulyana1810' >
                 <fa-icon class='social-sites__icon' [icon]='faTelegramPlane'></fa-icon>
-            </div>
-            <div class='social-sites__icon-wrapper'>
+            </a>
+            <a class='social-sites__icon-wrapper' href="mailto:ubychkovskaya20@gmail.com">
                 <fa-icon class='social-sites__icon' [icon]='faEnvelope'></fa-icon>
-            </div>
-            <div class='social-sites__resume-wrapper'>
+            </a>
+            <a class='social-sites__resume-wrapper'>
                 <span class='social-sites__resume'>Download Resume</span>
-            </div>
+            </a>
         </div>
     </div>
   
     <mat-drawer #drawer class="example-sidenav" mode="over" position="end">
-      <p>Auto-resizing sidenav</p>
+      <ul>
+          <a class='nav-item' href='#about'><li>About Myself</li></a>
+          <a class='nav-item' href='#education'><li>Education</li></a>
+          <a class='nav-item' href='#projects'><li>My Projects</li></a>
+          <a class='nav-item' href='#skills'><li>My Skills</li></a>
+          <a class='nav-item' href='#contacts'><li>Contacts</li></a>
+      </ul>
     </mat-drawer>
 </mat-drawer-container>

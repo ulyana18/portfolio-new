@@ -13,8 +13,11 @@ import { TimelineComponent } from './components/timeline/timeline/timeline.compo
 import { MatCardModule } from '@angular/material/card';
 import { MyProjectsComponent } from './components/my-projects/my-projects/my-projects.component';
 import { CarouselModule, WavesModule } from 'angular-bootstrap-md';
-// MDB Angular Pro
-import { ButtonsModule, CardsModule } from 'angular-bootstrap-md'
+import { ButtonsModule, CardsModule } from 'angular-bootstrap-md';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { SkillsComponent } from './components/skills/skills/skills.component';
+import { ContactsComponent } from './components/contacts/contacts/contacts.component';
+import { FooterComponent } from './components/footer/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { ButtonsModule, CardsModule } from 'angular-bootstrap-md'
     HeaderComponent,
     AboutMyselfComponent,
     TimelineComponent,
-    MyProjectsComponent
+    MyProjectsComponent,
+    SkillsComponent,
+    ContactsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,8 @@ import { ButtonsModule, CardsModule } from 'angular-bootstrap-md'
     CarouselModule,
     WavesModule,
     ButtonsModule,
-    CardsModule
+    CardsModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

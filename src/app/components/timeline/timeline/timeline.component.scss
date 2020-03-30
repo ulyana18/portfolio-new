@@ -5,7 +5,13 @@ $color-bg-year-shadow: rgba(145, 99, 47, 0.5);
 $color-title: rgb(145, 104, 77);
 $color-text-data: rgba(238, 230, 209, 0.808);
 
+:host {
+  position: relative;
+}
 .title {
+  // position: absolute;
+  // top: 500px;
+  // left: -24vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +22,8 @@ $color-text-data: rgba(238, 230, 209, 0.808);
   letter-spacing: 0.3em;
   padding-top: 80px;
   margin-bottom: 70px;
+  // transform: rotate(-90deg);
+  // white-space: nowrap;
 
   &::before,
   &::after {
@@ -30,7 +38,10 @@ $color-text-data: rgba(238, 230, 209, 0.808);
 }
 .timeline {
   position: relative;
-  margin: 10px auto;
+  margin: 0 auto;
+  // margin-top: 100px;
+  // margin-left: auto;
+  // margin-right: 20px;
   max-width: 1000px;
   background-color: rgba(43, 40, 38, 0.74);
 
