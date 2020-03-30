@@ -106,6 +106,9 @@ $name-color: rgb(189, 162, 136);
         background-color: rgba(0, 0, 0, 0.342);
         color: $icon-color;
     }
+    &:active {
+        background-color: rgb(172, 159, 149);
+    }
 }
 .social-sites__icon {
     font-size: 24px;
@@ -124,9 +127,12 @@ $name-color: rgb(189, 162, 136);
 
     &:hover {
         background-color: rgba(0, 0, 0, 0.288);
+        text-decoration: none;
         color: $icon-color;
     }
-
+    &:active {
+        background-color: rgb(172, 159, 149);
+    }
 }
 .social-sites__resume {
     font-size: 15px;
