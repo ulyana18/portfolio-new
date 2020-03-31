@@ -24,6 +24,10 @@ $title-color: rgb(202, 196, 180);
         flex-direction: column-reverse;
         padding: 30px 0;
     }
+    @media(max-width: 531px) {
+        width: 88vw;
+        margin: 0 auto;
+    }
 }
 .title {
     position: absolute;
