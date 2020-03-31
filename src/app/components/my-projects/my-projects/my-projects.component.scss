@@ -23,6 +23,10 @@ $title-color: rgb(202, 196, 180);
       height: 2px;
       margin: 0 15px;
       background-color: $title-color;
+
+      @media(max-width: 531px) {
+        display: none;
+      }
     }
 }
 .projects-wrapper {

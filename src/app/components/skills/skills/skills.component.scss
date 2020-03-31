@@ -7,6 +7,11 @@ $title-color: rgb(202, 196, 180);
     position: relative;
     padding-top: 160px;
     padding-bottom: 50px;
+
+    @media(max-width: 531px) {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 .title {
     position: absolute;
@@ -31,15 +36,28 @@ $title-color: rgb(202, 196, 180);
       height: 2px;
       margin: 0 15px;
       background-color: $title-color;
+
+      @media(max-width: 531px) {
+        display: none;
+      }
     }
     @media(max-width: 1068px) {
         left: -160px;
+    }
+    @media(max-width: 531px) {
+        position: relative;
+        left: 0;
+        transform: none;
     }
 }
 .skills-wrapper {
     width: 60%;
     color: #fff;
     background-color: rgba(29, 26, 25, 0.671);
+
+    @media(max-width: 531px) {
+        width: 90%;
+    }
 }
 .skill {
     margin: 30px;

@@ -9,9 +9,6 @@ $color-text-data: rgba(238, 230, 209, 0.808);
   position: relative;
 }
 .title {
-  // position: absolute;
-  // top: 500px;
-  // left: -24vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,8 +19,6 @@ $color-text-data: rgba(238, 230, 209, 0.808);
   letter-spacing: 0.3em;
   padding-top: 80px;
   margin-bottom: 70px;
-  // transform: rotate(-90deg);
-  // white-space: nowrap;
 
   &::before,
   &::after {
@@ -34,6 +29,10 @@ $color-text-data: rgba(238, 230, 209, 0.808);
     height: 2px;
     margin: 0 15px;
     background-color: $color-main-title;
+
+    @media(max-width: 531px) {
+      display: none;
+    }
   }
 }
 .timeline {

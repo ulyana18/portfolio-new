@@ -6,6 +6,11 @@ $title-color: rgb(202, 196, 180);
     align-items: center;
     padding: 80px 0;
     position: relative;
+
+    @media(max-width: 531px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
 }
 .wrapper {
     display: flex;
@@ -43,10 +48,20 @@ $title-color: rgb(202, 196, 180);
       height: 2px;
       margin: 0 15px;
       background-color: $title-color;
+
+      @media(max-width: 531px) {
+        display: none;
+      }
     }
 
     @media(max-width: 1068px) {
         right: -200px;
+    }
+    @media(max-width: 531px) {
+        position: relative;
+        right: 0;
+        transform: none;
+        margin-bottom: 40px;
     }
 }
 img {

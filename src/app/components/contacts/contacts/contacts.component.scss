@@ -27,11 +27,16 @@ $title-color: rgb(202, 196, 180);
     height: 2px;
     margin: 0 15px;
     background-color: $title-color;
+
+    @media(max-width: 531px) {
+      display: none;
+    }
   }
 }
 .send-message-wrapper {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 85%;
   margin: 70px 0;
 }
@@ -41,6 +46,7 @@ $title-color: rgb(202, 196, 180);
   align-items: center;
   width: 65px;
   height: 65px;
+  margin: 5px 0;
   border: 2px solid $title-color;
   border-radius: 50%;
 
@@ -56,7 +62,15 @@ $title-color: rgb(202, 196, 180);
   &:active {
     background-color: rgb(172, 159, 149);
   }
+  @media(max-width: 531px) {
+    width: 50px;
+    height: 50px;
+  }
 }
 .social-sites__icon {
   font-size: 2.7em;
+
+  @media(max-width: 531px) {
+    font-size: 2.5em;
+  }
 }
