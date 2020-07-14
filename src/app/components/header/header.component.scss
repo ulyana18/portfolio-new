@@ -1,5 +1,6 @@
-$icon-color: rgb(94, 78, 61);
-$name-color: rgb(189, 162, 136);
+$icon-color: rgb(179, 161, 142);
+$name-color: rgb(209, 187, 166);
+$icon-hover: rgba(168, 158, 135, 0.308);
 
 .example-container {
     display: block;
@@ -48,12 +49,12 @@ $name-color: rgb(189, 162, 136);
     font-weight: 400;
     line-height: 1em;
     text-align: center;
-    background: linear-gradient(90deg, rgba(131, 113, 97, 0.74), rgb(121, 101, 81), $name-color );
+    background: linear-gradient(90deg, rgba(161, 146, 132, 0.822), rgb(141, 122, 103), $name-color );
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 3s linear infinite;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.164);
+    -webkit-text-fill-color: rgba(202, 194, 177, 0.459);
 
     @media(max-width: 1067px) {
         font-size: 3.0em;
@@ -74,7 +75,7 @@ $name-color: rgb(189, 162, 136);
     font-size: 2em;
     line-height: 3em;
     letter-spacing: 0.15em;
-    color: rgba(97, 86, 77, 0.788);
+    color: rgba(202, 194, 177, 0.459);
 
     @media(max-width: 1065px) {
         font-size: 1.4em;
@@ -115,7 +116,7 @@ $name-color: rgb(189, 162, 136);
     cursor: pointer;
 
     &:hover {
-        background-color: rgba(0, 0, 0, 0.342);
+        background-color: $icon-hover;
         color: $icon-color;
     }
     &:active {
@@ -146,7 +147,7 @@ $name-color: rgb(189, 162, 136);
     cursor: pointer;
 
     &:hover {
-        background-color: rgba(0, 0, 0, 0.288);
+        background-color: $icon-hover;
         text-decoration: none;
         color: $icon-color;
     }

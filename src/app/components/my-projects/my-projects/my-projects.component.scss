@@ -40,7 +40,8 @@ $title-color: rgb(202, 196, 180);
 mdb-card {
     width: 325px;
     margin: 30px 0;
-    background-color: rgba(194, 178, 159, 0.822);
+    background-color: rgba(216, 199, 179, 0.822);
+    border-radius: 5px;
 }
 mdb-card-title h4 {
     color: rgb(66, 60, 48);
@@ -48,5 +49,6 @@ mdb-card-title h4 {
     font-weight: 500;
 }
 .button {
-    background-color: rgb(155, 142, 125);
+    background-color: rgba(184, 174, 155, 0.829);
+    border-radius: 3px;
 }
